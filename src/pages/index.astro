@@ -16,7 +16,10 @@ import "../styles/global.css";
 			}
 			html,
 			body {
-				height: stretch;
+				height: 100%;
+				@supports (height: stretch) {
+					height: stretch;
+				}
 			}
 			h1 {
 				font-size: 3em;
