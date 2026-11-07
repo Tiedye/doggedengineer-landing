@@ -1,3 +1,6 @@
+allowBuilds:
+  esbuild: true
+  workerd: true
 minimumReleaseAgeExclude:
   - '@typescript/typescript-darwin-arm64@7.1.0-dev.20261107.1'
   - '@typescript/typescript-darwin-x64@7.1.0-dev.20261107.1'

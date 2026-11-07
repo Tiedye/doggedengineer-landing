@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "doggedengineer-landing",
+  "account_id": "733117baa3396d88edb707c087bb2918",
+  "compatibility_date": "2026-11-07",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "doggedengineer.ca",
+      "custom_domain": true
+    }
+  ],
+  "build": {
+    "command": "pnpm build"
+  },
+  "assets": {
+    "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.01
+    }
+  }
+}

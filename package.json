@@ -12,6 +12,7 @@
     "check": "astro sync && tsc --noEmit --runExternalCode",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy": "wrangler deploy",
     "astro": "astro"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@astrojs/ts-content-mapper": "0.2.0",
     "@emnapi/runtime": "1.11.3",
-    "typescript": "7.1.0-dev.20261107.1"
+    "typescript": "7.1.0-dev.20261107.1",
+    "wrangler": "4.158.0"
   }
 }

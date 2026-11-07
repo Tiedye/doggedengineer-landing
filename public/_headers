@@ -1,0 +1,9 @@
+# HTML and other files retain Cloudflare's default revalidation behavior.
+
+# Astro changes these filenames whenever the contents change.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Font URLs are not versioned, so keep their browser cache bounded.
+/fonts/iosevka-slab/*
+  Cache-Control: public, max-age=86400
